@@ -1,4 +1,11 @@
-document.getElementById('formulario').addEventListener('submit', cadastrarVeiculo);
+document.getElementById('formulario').addEventListener('submit', cadastrarVeiculo), setInterval(funcao(), tempo);
+
+function ContarSegundos(){
+    var segundos = 1;
+    document.Writeln("Já passou " + segundos +" segundos...");
+}
+setInterval(ContarSegundos, 1000);
+
 
 function cadastrarVeiculo(e) {
 
@@ -45,6 +52,11 @@ function removeVeiculo(placa) {
             patio.splice(i, 1);
         }
     }
+    ContarSegundos(){
+    var segundos = 1;
+    document.Writeln("Já passou " + segundos +" segundos...");
+}
+setInterval(ContarSegundos, 1000);
 
     localStorage.setItem('patio', JSON.stringify(patio));
 
